@@ -1,15 +1,16 @@
 package com.example;
 
 public class JardinBotanico implements EspacioCultural {
+    private String nombre;
 
-    @Override
-    public String getNombre() {
-        return "Jardin Botanico";
-        
-    }
+    public JardinBotanico(String nombre){
+        this.nombre = nombre;
+
+    };
 
     @Override
     public void mostrarHorario(){
+        System.out.println("Lugar: " + nombre);
         System.out.println("9 de la mañana a 4 de la tarde");
     }
 

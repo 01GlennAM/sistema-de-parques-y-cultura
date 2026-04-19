@@ -15,12 +15,11 @@ public class Main {
         pq.realizarActividadPrincipal(); */
 
         ArrayList<EspacioCultural> lista = new ArrayList<>();
-        lista.add(new JardinBotanico());
-        lista.add(new ParqueExplora());
-        lista.add(new MuseoDeAntioquia());
+        lista.add(new JardinBotanico("Jardin Botanico"));
+        lista.add(new ParqueExplora("Parque Explora"));
+        lista.add(new MuseoDeAntioquia("Museo de Antioquia"));
 
         for (EspacioCultural obj: lista) {
-            System.out.println("Lugar: " + obj.getNombre());
             obj.mostrarHorario();
             System.out.println(obj.obtenerRequisitoEntrada());
             obj.realizarActividadPrincipal();

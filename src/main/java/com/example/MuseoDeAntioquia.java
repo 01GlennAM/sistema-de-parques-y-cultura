@@ -2,14 +2,15 @@ package com.example;
 
 public class MuseoDeAntioquia implements EspacioCultural {
 
-     @Override
-    public String getNombre() {
-        return "Museo de Antioquia";
-        
-    }
-    
+    private String nombre;
+
+    public MuseoDeAntioquia(String nombre){
+        this.nombre = nombre;
+
+    };
     @Override
     public void mostrarHorario(){
+        System.out.println("Lugar: " + nombre);
         System.out.println("5 pm a 9 pm");
     }
 
